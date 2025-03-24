@@ -33,13 +33,13 @@ namespace Lab_6
                 {
                     case 1:
                         string answer = _animal;
-                        return responses.Count(a => a.Animal.Length > 0 && a.Animal != null);
+                        return responses.Count(a => a.Animal != null && a.Animal.Length > 0l);
                     case 2:
                         string answer2 = _characterTrait;
-                        return responses.Count(a => a.CharacterTrait.Length > 0 && a.CharacterTrait != null);
+                        return responses.Count(a => a.CharacterTrait != null && a.CharacterTrait.Length > 0);
                     case 3:
 
-                        return responses.Count(a => a.Concept.Length > 0 && a.Concept != null);
+                        return responses.Count(a => a.Concept != null && a.Concept.Length > 0);
                     default:
                         return 0;
                 }
